@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <title>blog</title>
+</head>
+
+<body>
+    <header>
+        <a class="nav" href="login.html">
+            <h2>Log In</h2>
+        </a><a class="nav" href="signin.html">
+            <h2>Sing up</h2>
+        </a>
+    </header>
+    <div class="blogpost_blocks">
+        <h1>Welkom op deze blog!</h1>
+        <div class="blogpost_list" id="blogpost"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBfR9n3jWhVAS9WJc0uKGeesbf3weGreN8",
+            authDomain: "eersteproject-c4c8c.firebaseapp.com",
+            databaseURL: "https://eersteproject-c4c8c.firebaseio.com",
+            projectId: "eersteproject-c4c8c",
+            storageBucket: "eersteproject-c4c8c.appspot.com",
+            messagingSenderId: "119221637084"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="JS/home.js"></script>
+</body>
+
+</html>
