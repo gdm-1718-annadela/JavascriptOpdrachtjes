@@ -1,0 +1,75 @@
+{{> header }}
+<h1>Kamer Informatie</h1>
+<div class="kotid">
+<form>
+  <label class="label">Huurprijs</label><br>
+  <input class="inputfield" id="huurprijs" type="number" value="400" required>euro<br>
+  <label class="label">Waarborg</label><br>
+  <input  class="inputfield" id="waarborg" type="number" value="450">euro<br>
+  <label class="label">Type</label></br>
+  <select id="type">
+    <option value="kamer">Kamer</option>
+    <option value="studio">Studio</option>
+  </select>
+  <label class="label" value="1">Verdieping</label><br>
+  <input class="inputfield" id="verdieping" type="number"><br>
+  <label class="label">van</label><br>
+  <input class="inputfield"id="van" type="number" value="8"><br>
+  <label class="label" >Opervlakte kamer</label><br>
+  <input class="inputfield" id="opervlakte" type="number" value="15">²m<br>
+  <label class="label">Personen in kamer</label><br>
+  <input class="inputfield" id="aantalP" type="number" value="1"><br>
+  <label class="label">Douche</label><br>
+  <select id="Douche">
+    <option>-- kies</option>
+    <option aria-checked>Prive</option>
+    <option>Gedeeld</option>
+    <option>Niet aanwezig</option>
+  </select><br>
+  <label class="label">Bad</label><br>
+  <select id="Bad">
+    <option>-- kies</option>
+    <option>Prive</option>
+    <option>Gedeeld</option>
+    <option aria-checked>Niet aanwezig</option>
+  </select><br>
+  <label>Toillet</label><br>
+  <select id="Toillet">
+    <option>-- kies</option>
+    <option aria-checked>Prive</option>
+    <option>Gedeeld</option>
+    <option>Niet aanwezig</option>
+  </select><br>
+  <label>Keuken</label><br>
+  <select id="Keuken">
+    <option>-- kies</option>
+    <option aria-checked>Prive</option>
+    <option>Gedeeld</option>
+    <option>Niet aanwezig</option>
+  </select><br>
+  <label>Bemeubeld</label>
+  <select id="bemeubeld">
+    <option aria-checked>ja</option>
+    <option>nee</option>
+  </select>
+  <label>Omschrijving</label><br>
+  <textarea class="inputfield" id="Omschrijving">naar eigen wensen te decoreren</textarea ><br>
+  <label>Adress</label><br>
+  <input  class="inputfield str" id="straat" type="text" value="kraaienhof"><input  class="inputfield nr" id="huisnr" type="number" value="14"><br>
+  <input  class="inputfield" id="gemeente" type="text" value="wielsbeke"><br>
+  <label>Opmerkingen</label><br>
+  <textarea class="inputfield" id="Opmerking">betalling via overschrijven</textarea><br>
+  <h1>Kotbaas Informatie</h1>
+  <label>Naam</label><br>
+  <input class="inputfield" id="firstnameKotbaas" type="text"><br>
+  <label>Achternaam</label><br>
+  <input class="inputfield" id="nameKotbaas" type="text"><br>
+  <label>email</label><br>
+  <input class="inputfield" id="emailKotbaas" type="email"><br>
+  <button id="post" type="submit">Plaats</button>
+
+
+</form>
+</div>
+<script src="/pages/nieuwKot.js"></script>
+{{> footer }}
